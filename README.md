@@ -18,6 +18,11 @@ env/Scripts/activate
 pip install -r requirements.txt
 ```
 
+### How to run the Flask app?
+```
+python main.py
+```
+
 ### How to deactivate the virtual environment?
 ```
 deactivate
