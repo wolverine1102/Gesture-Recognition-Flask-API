@@ -148,6 +148,51 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"error_message\": \"Image file not found. Ensure that multipart/form-data contains key - 'image_file'\"\n}"
+				},
+				{
+					"name": "Status Code - 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_file",
+									"type": "file",
+									"src": "20240216_095110.jpg"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:5000/api/predict"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.3 Python/3.12.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Jun 2024 12:56:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No hand detected.\"\n}"
 				}
 			]
 		}
