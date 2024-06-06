@@ -35,7 +35,7 @@ def predict():
             
             except:
                 return jsonify({
-                    'message' : 'No hand detected.'
+                    'message' : 'No hand detected in the image.'
                 })
             
         else:
