@@ -12,7 +12,10 @@ gesture_recognizer = GestureRecognizer()
 def predict():
     try:
         if 'image_file' not in request.files:
-            raise BusinessValidationError(status_code=400, error_message='Image file not found')
+            raise BusinessValidationError(
+                status_code=400, 
+                error_message="Image file not found. Ensure that multipart/form-data contains key - 'image_file'"
+            )
     
         image_file = request.files['image_file']
 
